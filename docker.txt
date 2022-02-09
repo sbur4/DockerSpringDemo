@@ -1,0 +1,15 @@
+docker
+docker version
+
+hubdocker-> image
+docker pull openjdk
+docker images
+docker run openjdk
+docker ps--help
+docker run -it openjdk
+docker container prune
+
+FROM openjdk:8
+WORKDIR /app
+COPY . .
+CMD["openjdk:8", "DemoApplication.java"]
